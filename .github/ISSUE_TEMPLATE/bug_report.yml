@@ -1,0 +1,55 @@
+name: Bug 报告
+description: 报告可复现的功能、部署或数据边界问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿提交真实账号、密钥、企业文档、设备序列号或未经脱敏的维修工单。
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      placeholder: 例如 0.2.0 或提交哈希
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题范围
+      options:
+        - 部署与迁移
+        - 登录与权限
+        - 产品与售后数据
+        - 文档解析与知识审核
+        - 多轮问答与知识图谱
+        - 前端界面
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 使用脱敏数据描述最小复现过程。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为与实际行为
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息
+      placeholder: 操作系统、Docker/Compose 版本、浏览器等
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 数据安全确认
+      options:
+        - label: 我已确认内容经过脱敏且不包含凭据、真实企业资料或设备标识。
+          required: true
