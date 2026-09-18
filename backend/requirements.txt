@@ -1,0 +1,10 @@
+fastapi==0.115.12
+alembic==1.16.5
+uvicorn[standard]==0.34.3
+sqlalchemy==2.0.41
+psycopg[binary]==3.2.9
+pgvector==0.4.1
+neo4j==5.28.1
+pydantic==2.11.5
+python-multipart==0.0.20
+httpx==0.28.1
