@@ -1,5 +1,5 @@
 -r requirements.txt
-docling==2.43.0
+docling==2.127.0
 # Docling 2.43 was released against the Transformers 4.x API. Keep the
 # transitive dependency on that compatible major version.
 transformers>=4.42.0,<5.0.0
